@@ -1,0 +1,216 @@
+/* ---------- FILTER BAR ---------- */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.filters a {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #C8A2C8;
+  color: #C8A2C8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+.filters a.active,
+.filters a:hover {
+  background-color: #C8A2C8;
+  color: white;
+}
+
+/* ---------- GRID ---------- */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1700px;         
+  margin: 0 auto;
+  padding: 0 20px 60px;
+  box-sizing: border-box;
+}
+
+.practice_section .portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-container {
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px; /* reduce width slightly to match heading alignment */
+}
+
+/* Force at least 3 columns on screens ≥ 900px */
+@media (min-width: 900px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+  }
+}
+
+/* Optional: 4 columns on very wide screens */
+@media (min-width: 1300px) {
+  .portfolio-container {
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    padding: 0 15px 40px;
+  }
+}
+
+/* ---------- CARD: CAPPED & CENTERED ---------- */
+.project-card {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;               /* centers card in its grid cell */
+  height: auto;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  transition: transform .3s ease, box-shadow .3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.15);
+}
+
+/* ---------- IMAGE + OVERLAY ---------- */
+.card-img {
+  position: relative;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  height: 200px;               /* smaller image */
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  transition: transform .4s ease;
+}
+.project-card:hover img {
+  transform: scale(1.05);
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(200,162,200,.88);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity .3s ease;
+  padding: 16px;
+}
+.project-card:hover .overlay { opacity: 1; }
+.overlay-content h5 {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.overlay-content a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 3px 0;
+  font-size: .9rem;
+}
+
+/* ---------- TEXT BELOW IMAGE ---------- */
+.card-body {
+  padding: 16px;
+  font-size: .93rem;
+  color: #555;
+  line-height: 1.45;
+  flex-grow: 1;
+}
+
+/* ---------- HEADINGS ---------- */
+.heading-text { color: #8e4585; font-weight: bold; }
+.practice_section h3 { font-weight: 700; margin-bottom: 24px; }
+
+/* ---------- TRUE CENTER FIX ---------- */
+.practice_section .container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.practice_section .portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  max-width: 1250px;   /* controls how wide the grid spans */
+  margin: 0 auto;
+  padding: 0 40px 60px;
+  box-sizing: border-box;
+}
+
+
+/* ---------- HORIZONTAL SCROLL GALLERY ---------- */
+.portfolio-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #C8A2C8 #f1f1f1;
+}
+
+.portfolio-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.portfolio-container::-webkit-scrollbar-thumb {
+  background-color: #C8A2C8;
+  border-radius: 5px;
+}
+
+.portfolio-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Each card snaps nicely into place */
+.portfolio-item {
+  scroll-snap-align: center;
+  flex: 0 0 300px; /* fixed width per card */
+}
+
+

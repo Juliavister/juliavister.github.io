@@ -1,367 +1,408 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
   <title>JV</title>
 
-
-
-  <!-- bootstrap core css -->
+  <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- fonts style -->
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
-
-
-
-  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-
+  <link href="css/projects.css" rel="stylesheet" />
 
 </head>
 
 <body>
   <div class="top_container">
-    <!-- header section strats -->
+    <!-- Header -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            JV
-          </a>
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">JV</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html"> Skills </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="practice.html"> PROJECTS </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html"> About </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="Github.html">Github</a>
-                </li>
-
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Skills</a></li>
+                <li class="nav-item active"><a class="nav-link" href="practice.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="Github.html">Github</a></li>
               </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
             </div>
+          </div>
         </nav>
       </div>
     </header>
-
   </div>
-  <!-- end header section -->
 
-
-  <!-- practice section -->
+  <!-- Projects Section -->
   <section class="practice_section layout_padding">
+   <div class="container">
+      <div class="d-flex flex-column align-items-center text-center">
+        <p class="heading-text">TAKE A LOOK AT</p>
+        <h3 class="text-uppercase">MY PROJECTS</h3>
+
+        <div class="portfolio">
+          <!-- Filter Bar -->
+          <div class="filters text-center mb-4">
+            <a data-filter="*" class="active">All</a>
+            <a data-filter=".new">New</a>
+            <a data-filter=".games">Games</a>
+            <a data-filter=".web">Web</a>
+            <a data-filter=".app">App</a>
+            <a data-filter=".cyber">Cybersecurity</a>
+            <a data-filter=".other">Other</a>
+          </div>
+
+          <!-- Portfolio Grid -->
+          <div class="portfolio-container">
+
+            <!-- Each project -->
+            <div class="portfolio-item web new">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/MasterCountdown.png" alt="Master Countdown Diary">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Master Countdown Diary</h5>
+                      <a href="https://jv-mastercountdown.vercel.app/" target="_blank">Follow my journey</a><br>
+                      <a href="https://github.com/Juliavister/MasterCountdown" target="_blank">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>A minimalist, animated “coming soon” website tracking my master’s thesis completion.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item cyber new">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/triton.jpg" alt="TRITON Attack Analysis">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Analyzing and Visualising the TRITON Attack</h5>
+                      <a href="https://github.com/Juliavister/Cybersecurity-rapporter/blob/main/Sikkerhet%20i%20industrielle%20systemer%20TEK5520/AnalyzingTRITON_report.pdf" target="_blank">Read here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Study of the TRITON malware with and without AI, visualized using Attack Flow Builder.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item web new">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/sifi.no.png" alt="SIFI.no">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>SIFI.no</h5>
+                      <a href="https://www.sifi.no/" target="_blank">Explore here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Information Security student organization website, where I helped develop several frontend pages.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item cyber">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/triton.jpg" alt="TRITON/TRISIS Attack">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>TRITON/TRISIS Attack</h5>
+                      <a href="https://github.com/Juliavister/Cybersecurity-rapporter/blob/main/Sikkerhet%20i%20industrielle%20systemer%20TEK5520/TritonIncident.pdf" target="_blank">Read here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>TEK5520 assignment analyzing TRITON malware targeting industrial control systems.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item web new">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/pensjonspillet.png" alt="Pensjonspillet">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Pensjonspillet</h5>
+                      <a href="https://www.kantega.no/blogg/pensjonsspillet" target="_blank">Read about it here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Web simulation game built during my internship at Kantega, created entirely in frontend.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item cyber">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/CTI.jpg" alt="Cyber Threat Intelligence Report">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Cyber Threat Intelligence Report</h5>
+                      <a href="https://github.com/Juliavister/Cybersecurity-rapporter/tree/main/Cyber%20Operations%20IN4180" target="_blank">Read here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Report analyzing ransomware threats against the Nordic education sector.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item cyber">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/riskpic.jpg" alt="Risk Assessment">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Semesteroppgave - Risikovurdering</h5>
+                      <a href="https://github.com/Juliavister/Cybersecurity-rapporter/blob/main/Sikkerhets-og-Risikovurdering%20IN5080/Semesteroppgave.pdf" target="_blank">Read here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Risk assessment report identifying security risks for a fictional company.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item cyber">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/TORpic.png" alt="Analysis of TOR">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>An Analysis of TOR</h5>
+                      <a href="https://github.com/Juliavister/Cybersecurity-rapporter/blob/main/An%20analysis%20of%20TOR.pdf" target="_blank">Read here</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Study on the TOR network and its blocking issues in privacy-centric communication.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item web">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/BudgetBuddyDash.PNG" alt="BudgetBuddy">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>BudgetBuddy</h5>
+                      <a href="https://github.com/Juliavister/BudgetBuddy" target="_blank">GitHub</a><br>
+                      <a href="CS Bachelor Thesis Julia Vister.pdf" download>Read my Bachelor thesis</a><br>
+                      <a href="BudgetBuddy.html">Screenshots</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Fullstack expense tracker with reporting and visualization features.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item games">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/game1.jpg" alt="Nightfall">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Nightfall</h5>
+                      <a href="https://ehady.itch.io/nightfall" target="_blank">Play game</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>2D pixel-art Unity game made in a group project — collect items to progress levels.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item app">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/Protect_HER.png" alt="ProtectHer">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>ProtectHer</h5>
+                      <a href="https://github.com/Juliavister/ProtectHer" target="_blank">GitHub</a><br>
+                      <a href="ProtectHer.html">Screenshots</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Safety app for women — add danger zones, share location, and alert nearby users.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item games">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/ConnectFour.jpeg" alt="Connect Four">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Connect Four</h5>
+                      <a href="https://github.com/Juliavister/ConnectFourGame/tree/main" target="_blank">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Connect Four game where you play against an AI using the minimax algorithm.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item app">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/LovableHome.png" alt="Lovable Plants">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Lovable Plants</h5>
+                      <a href="https://github.com/Juliavister/IOS-applications/tree/main/LooveablePlants" target="_blank">GitHub</a><br>
+                      <a href="LovPLantsPic.html">Screenshots</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>iOS app reminding users to water plants, with editable list and reminders.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item other">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/telegramBOT.JPEG" alt="Currency Telegram Bot">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Currency Telegram Bot</h5>
+                      <a href="https://github.com/Juliavister/SoftwareEngineering" target="_blank">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Interactive Telegram bot comparing and predicting exchange rates of multiple currencies.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item web">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/Calculator.png" alt="Web Calculator">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Web Calculator</h5>
+                      <a href="https://juliavister.github.io/UnusualCalculator/" target="_blank">Try it</a><br>
+                      <a href="https://github.com/Juliavister/UnusualCalculator" target="_blank">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Integer calculator with color customization and sum/product/min/max functions.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item web new">
+              <div class="card project-card">
+                <div class="card-img">
+                  <img src="images/RoseBitMusic.png" alt="Music Player">
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <h5>Music Player</h5>
+                      <a href="https://rosebit.vercel.app/" target="_blank">Listen</a><br>
+                      <a href="https://github.com/Juliavister/K-MusicPlayer" target="_blank">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p>Lightweight browser-based music player built with HTML, CSS, and JavaScript.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- end portfolio container -->
+        </div><!-- end portfolio -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info_section">
     <div class="container">
-      <div class="d-flex flex-column align-items-center">
-        <p class="heading-text">
-          TAKE A LOOK AT
-        </p>
-        <h3 class="text-uppercase">
-          MY PROJECTS
-        </h3>
-        <div  class="container">
-          <div class="portfolio" >
-            <div class="filters">
-              <a data-filter=".new"> New</a>
-              <a href="#games-section" data-filter=".games">Games</a>
-              <a href="#web-section" data-filter=".web">Web</a>
-              <a href="#app-section" data-filter=".app">App</a>
-              <a href="#cyber-section" data-filter=".cyber">Cybersecurity</a>
-            </div>
-
-            <div class="portfolio-container">
-
-                <div class="blog-card cyber">
-                <div class="img-holder">
-                  <img src = "images/triton.jpg ">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Analyzing and visualising the TRITON attack</h4>
-                  <p> TEK5520 second assignment. Report that does a study of the TRITON malware with and without AI, and visualizing the attack flow using Attack Flow Builder.</p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/Cybersecurity-rapporter/blob/main/Sikkerhet%20i%20industrielle%20systemer%20TEK5520/AnalyzingTRITON_report.pdf" target="_blank"> Read here! </a>
-                </div>
-              </div>
-
-               <div class="blog-card web new">
-                <div class="img-holder">
-                  <img src = "images/sifi.no.png">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">SIFI.no</h4>
-                  <p> Information Security student organization website. I am a contributer to the development of the frontend for this website, where I specifcally worked on the "Om oss" page and the Merch page as well as the home page.  </p>
-                  <a style="color: #a47dab" href="https://www.sifi.no/" target="_blank" > Explore here! </a>
-                </div>
-              </div>
-
-              
-               <div class="blog-card cyber">
-                <div class="img-holder">
-                  <img src = "images/triton.jpg ">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">TRITON/TRISIS attack</h4>
-                  <p> TEK5520 assignment. Report that does a study of the TRITON malware targeting IACS/SCADA.</p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/Cybersecurity-rapporter/blob/main/Sikkerhet%20i%20industrielle%20systemer%20TEK5520/TritonIncident.pdf" target="_blank"> Read here! </a>
-                </div>
-              </div>
-
-                <div class="blog-card web new">
-                <div class="img-holder">
-                  <img src = "images/pensjonspillet.png">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Pensjonspillet</h4>
-                  <p> Project from my summer intern work at Kantega. Web simulation game developed fully using frontend.  </p>
-                  <a style="color: #a47dab" href="https://www.kantega.no/blogg/pensjonsspillet" target="_blank" > Read about it here! </a>
-                </div>
-              </div>
-
-              <div class="blog-card cyber">
-                <div class="img-holder">
-                  <img src = "images/CTI.jpg ">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Cyber Threat intelligence report</h4>
-                  <p> IN4180 group assignment. Report that identifies the threat landscape about 
-                    ransomware operations of the education sector in the Nordic countries. </p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/Cybersecurity-rapporter/tree/main/Cyber%20Operations%20IN4180" target="_blank"> Read here! </a>
-                </div>
-              </div>
-
-              <div class="blog-card cyber">
-                <div class="img-holder">
-                  <img src = "images/riskpic.jpg ">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Semesteroppgave - Risikovurdering</h4>
-                  <p> IN5080 group assignment. Report that does risk assesment and identifies security risks of a fictional company. </p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/Cybersecurity-rapporter/blob/main/Sikkerhets-og-Risikovurdering%20IN5080/Semesteroppgave.pdf"> Read here! </a>
-                </div>
-              </div>
-
-              <div class="blog-card cyber">
-                <div class="img-holder">
-                  <img src = "images/TORpic.png">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">An analysis of TOR</h4>
-                  <p> IN5540 group assignment. Report that does a study on the use of TOR and its blocking issues that occur with the use of the network.    </p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/Cybersecurity-rapporter/blob/main/An%20analysis%20of%20TOR.pdf" target="_blank"> Read here! </a>
-                </div>
-              </div>
-
-              <div class="blog-card web new">
-                <div class="img-holder">
-                  <img src = "images/BudgetBuddyDash.PNG">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">BudgetBuddy</h4>
-                  <p> Bachelor Degree project. A fullstack expense tracker to easily track day to day expenses on the go, with reports and visualisation on a users money usage </p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/BudgetBuddy" target="_blank"> See the project on GitHub!</a>
-                  <a style="color: #a47dab" href="CS Bachelor Thesis Julia Vister.pdf" download>
-                        <br>Read my thesis about BudgetBuddy!
-                  </a>
-                  <a style="color: #a47dab" href="BudgetBuddy.html"> <br>
-                     Project is unfortunately not running, but you can look at screenshots here! </a>
-                </div>
-              </div>
-
-                 <div class="blog-card games new">
-                <div class="img-holder">
-                  <img src = "images/game1.jpg">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Nightfall</h4>
-                  <p> A game i participated in making in a Unity group project. 2D pixel animated computer game, where you need to get all collectibles to get to the next level and finish.</p>
-                  <a style="color: #a47dab" href="https://ehady.itch.io/nightfall" target="_blank"> Click to try it!</a>
-                </div>
-              </div>
-
-              <div class="blog-card app new">
-                <div class="img-holder">
-                  <img src = "images/Protect_HER.png">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">ProtectHer</h4>
-                  <p> Team project. You can use an interactive map to view/add danger zones and share your position if you feel unsafe, to other girls in your area to look out for you while being outside  </p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/ProtectHer" target="_blank"> See it on GitHub!</a>
-                  <a style="color: #a47dab" href="ProtectHer.html" > 
-                    <br> Project is unfortunately not running, but you can look at screenshots here! </a>
-                </div>
-              </div>
-
-              <div class="blog-card games new">
-                <div class="img-holder">
-                  <img src = "images/ConnectFour.jpeg">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Connect Four</h4>
-                  <p> Project made for my "Games in AI" bachelor class. A connect four game where you play against an AI (using minmax algorithm) </p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/ConnectFourGame/tree/main" target="_blank"> See it on GitHub!</a>
-                </div>
-              </div>
-
-              <div class="blog-card app new">
-                <div class="img-holder">
-                  <img src = "images/LovableHome.png">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Lovable Plants</h4>
-                  <p> A plant watering reminder app I wrote for my IOS project. Lets you store plants in an editable list, set a reminder on a chosen date and time with your own labels.</p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/IOS-applications/tree/main/LooveablePlants" target="_blank"> See it on GitHub!</a>
-                  <a style="color: #a47dab" href="LovPLantsPic.html"> 
-                    <br> Project is unfortunately not running, but you can take a look at the simulator screen here! </a>
-                </div>
-              </div>
-
-              <div class="blog-card other new">
-                <div class="img-holder">
-                  <img src = "images/telegramBOT.JPEG">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Currency Telegram Bot</h4>
-                  <p> Group project from the course Software Engineering. A user interactive telegram bot that lets you easily find the rate of four different currencies, compare, look at graphs and get a prediction of your chosen currency. </p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/SoftwareEngineering" target="_blank"> See it on GitHub!</a>
-                </div>
-              </div>
-
-              <div class="blog-card web new">
-                <div class="img-holder">
-                  <img src = "images/UnCalc.png">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Web Calculator</h4>
-                  <p> Integer calculator that lets you input or autofill integers, and calculate its sum, product, minimum and maximum. Also lets you change colors as desired. </p>
-                  <a style="color: #a47dab" href="https://juliavister.github.io/UnusualCalculator/" target="_blank"> Test it out!</a>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/UnusualCalculator" target="_blank"> <br>See it on GitHub! </a>
-                </div>
-              </div>
-
-              <div class="blog-card web new">
-                <div class="img-holder">
-                  <img src = "images/MusicPlayer.png">
-                </div>
-                <div class="content-holder">
-                  <h4 class="heading-text">Music Player </h4>
-                  <p> A simple k-pop music player.</p>
-                  <a style="color: #a47dab" href="https://github.com/Juliavister/K-MusicPlayer" target="_blank"> See it on GitHub!</a>
-                  <a style="color: #a47dab" href="https://juliavister.github.io/K-MusicPlayer//" target="_blank"> <br>
-                    Listen to music (unfortunately there is a music error as of now) </a>
-                </div>
-              </div>
-            </div>
+      <div class="row justify-content-center text-center align-items-center custom_border-btm pb-4">
+        <div class="col-md-4 info_logo">
+          <p>Thank you for scrolling all the way down to my footer! I hope you liked exploring my website.</p>
+        </div>
+        <div class="col-md-4 photo_me d-flex flex-column align-items-center text-center">
+          <img src="images/potrait_me.jpeg" alt="Photo of me" style="width: 120px; border-radius: 20px;">
+          <div class="info_social mt-3 d-flex justify-content-center">
+            <a href="https://www.linkedin.com/in/julia-vister-a6756b22b" target="_blank">
+              <img src="images/linkedin.png" alt="LinkedIn" style="width: 32px;">
+            </a>
           </div>
         </div>
-      </div>
-  </section>
-  
-  <!-- end practice section -->
-
-  
- <!-- info section -->
-<section class="info_section">
-  <div class="container ">
-    <div class="row justify-content-center text-center align-items-center custom_border-btm pb-4">
-
-      <div class="col-md-4 info_logo">
-        <p>
-          Thank you for scrolling all the way down to my footer!
-          I hope you liked exploring my website. Feel free to contact me if there is anything.
-        </p>
-      </div>
-
-      <div class="col-md-4 photo_me d-flex flex-column align-items-center text-center">
-      <img src="images/potrait_me.jpeg" alt="Photo of me" style="width: 120px; border-radius: 20px;">
-      <!-- linkedin centered below photo -->
-        <div class="info_social mt-3 d-flex justify-content-center">
-          <a href="https://www.linkedin.com/in/julia-vister-a6756b22b" target="_blank">
-            <img src="images/linkedin.png" alt="LinkedIn" style="width: 32px;">
-          </a>
+        <div class="col-md-4 info_address">
+          <h5>Contact</h5>
+          <p>(+47) 47633977</p>
+          <p><a href="mailto:juliavister@gmail.com">juliavister@gmail.com</a></p>
         </div>
       </div>
-
-
-      <div class="col-md-4 info_address">
-        <h5>Contact</h5>
-        <p>(+47) 47633977</p>
-        <p><a href="mailto:juliavister@gmail.com">juliavister@gmail.com</a></p>
-      </div>
-
     </div>
-  </div>
-</section>
-<!-- end info section -->
-
-  <!-- end contact section -->
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2025 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
   </section>
-  <!-- footer section -->
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- progreesbar script -->
+  <!-- Footer -->
+  <section class="container-fluid footer_section">
+    <p>Copyright &copy; 2025 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a></p>
+  </section>
 
-  <!-- jQuery library (required for Isotope) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <!-- Isotope library -->
+  <!-- Scripts -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-
-  </script>
-
+  
 <script>
   $(document).ready(function(){
-    // init Isotope
     var $grid = $('.portfolio-container').isotope({
-      itemSelector: '.blog-card',
-      layoutMode: 'fitRows'
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows',
+      fitRows: {
+        gutter: 20
+      }
     });
 
-    // filter items on link click
     $('.filters a').click(function(e){
-      e.preventDefault(); // prevent page jump
+      e.preventDefault();
       var filterValue = $(this).attr('data-filter');
       $grid.isotope({ filter: filterValue });
-      
-      // optional: highlight active filter
       $('.filters a').removeClass('active');
       $(this).addClass('active');
     });
@@ -370,7 +411,5 @@
 
 
 </body>
-
-
-
 </html>
+

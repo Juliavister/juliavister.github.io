@@ -252,65 +252,6 @@ a:focus {
 }
 /* end about section */
 
-/* practice section */
-.practice_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.practice_box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 200px 15px 0 15px;
-  transform: translateY(0);
-  transition: all .7s;
-  padding-bottom: 50px;
-}
-
-.practice_box:hover {
-  transform: translateY(-150px);
-  cursor: pointer;
-}
-
-.practice_box:hover .practice_img-box {
-  background-color: #C8A2C8;
-}
-
-.practice_img-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 225px;
-  height: 295px;
-  border-radius: 90px;
-  background-color: #363636;
-
-}
-
-.practice_box h4 {
-  margin-top: 15px;
-}
-
-.practice_img-box img {
-  width: 120px;
-}
-
-.practice_detail p {
-  margin-bottom: 55px;
-  text-align: center;
-}
-
-.heading-text {
-  padding: 0;
-  margin: 0;
-  color: #8e4585;
-  font-weight: bold;
-}
-
-/* end Practice section */
-
 .skills-container {
   display: flex;
   justify-content: space-between;
@@ -367,13 +308,18 @@ li {
   content: "";
   width: 40%;
   height: 100%;
-  background-image: url(../images/dagen@ifi.png);
+  background-image: url(../images/WorkSummer.JPG);
   position: absolute;
   top: 0;
   right: 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.welcome_section.blog-photo::before {
+  background-image: url("../images/dagen.jpeg");
+}
+
 
 .welcome_section.github-photo::before {
   background-image: url("../images/ctf.png");
@@ -503,7 +449,6 @@ li {
   width: 32px; /* keep icon small */
 }
 
-
 /* end info section */
 
 
@@ -526,114 +471,6 @@ li {
 }
 
 /* end footer section*/
-
-/* start practice(not home) section */
-.portfolio .filters {
-  border-bottom: 2px solid #dee2e6;
-  border-radius: 0;
-  padding-bottom: 4px;
-  margin: 0 auto 20px;
-  max-width: 400px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.portfolio .filters a {
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  display: block;
-  color: #212529;
-  font-size: 13px;
-  font-weight: 500;
-  opacity: .7;
-  padding: 4px 10px;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-}
-
-.portfolio .filters a:first-child {
-  margin-left: 0;
-}
-
-.portfolio .filters a:last-child {
-  margin-right: 0;
-}
-
-.portfolio .filters a:hover {
-  opacity: .9;
-}
-
-.portfolio .filters a.active {
-  opacity: 1;
-  background: #C8A2C8;
-  color: #fff;
-}
-
-.portfolio .portfolio-container .portfolio-item {
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 10px -5px;
-  overflow: hidden;
-  border-radius: 2px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.portfolio .portfolio-container .portfolio-item .content-holder {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background: rgba(248, 92, 112, 0.8);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-  color: #fff;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-}
-
-.portfolio .portfolio-container .portfolio-item .content-holder .title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.portfolio .portfolio-container .portfolio-item .content-holder .subtitle {
-  font-weight: 500;
-  opacity: 1;
-  color: #fff;
-}
-
-.portfolio .portfolio-container .portfolio-item:hover .content-holder {
-  opacity: 1;
-  visibility: visible;
-}
-/*end practice(not home) */
 
 /*Blog cards idk */
 .blog-card {
@@ -751,134 +588,91 @@ li {
   font-size: 1.4em;
   color: #c8a2c8; /* nice purple */
   padding-bottom: 5px;
-  text-align: center; /* add this */
+  text-align: center; 
 }
 
 
-
-
-
-
-
-
-/*blog cards end*/
-
-/*
-
-.progress {
-  padding: 6px;
-  background: rgba(0, 0, 0, 0.25);
-  border-radius:8px;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-}
-.progress-bar {
-  height: 18px;
-  background-color:#C8A2C8;
-  border-radius: 4px;
-  transition: 0.4s linear;
-  transition-property: width, background;
-  padding-bottom: 10px;
-}
-.progress-bar2 {
-  height: 18px;
-  border-radius: 40px;
-  background-image:
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  transition: 0.4s linear;
-  transition-property: width, background-color;
+/* Restore homepage practice section */
+body:not(.projects-page) .practice_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
 }
 
-
-@keyframes progressAnimation {
-  0%   { width: 5%; background-color: #F9BCCA;}
-  100% { width: 85%; background-color:#C8A2C8 }
-}
-*/
-
-
-/* skill progress */
-
-/*
-.wrapper {
-  width: 400px;
-  font-family: 'Roboto', sans-serif;
-  margin:0 auto;
-}
-.skill {
-  margin-bottom: 35px;
-  position: relative;
-  overflow-x:hidden;
-}
-.skill > p {
-  font-size: 18px;
-  font-weight: 700;
-  color: #1a1716;
-  margin: 0;
-}
- */
-
-/*
-.skill:before {
-  width: 100%;
-  height: 10px;
-  content: "";
-  display: block;
-  position: absolute;
-  background: #f8faf9;
-  bottom: 0;
+body:not(.projects-page) .practice_box {
+  width: 220px;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.skill-bar {
-  width: 100%;
-  height: 10px;
-  background:#C8A2C8;
-  display: block;
-  position: relative;
+body:not(.projects-page) .practice_box:hover {
+  transform: translateY(-5px);
 }
 
-.skill-bar span {
-  position: absolute;
-  border-top: 5px solid #F9BCCA;
-  top: -30px;
-  padding: 0;
-  font-size: 18px;
-  padding: 3px 0;
-  font-weight: 500;
+/* ---------- restore larger dark gray circular icons on home page ---------- */
+body:not(.projects-page) .practice_img-box {
+  width: 200px;                 /* slightly larger circle */
+  height: 200px;
+  background-color: #504e4e;    /* darker gray tone */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.skill-bar {
-  position: relative;
+
+body:not(.projects-page) .practice_img-box img {
+  width: 60px;                  /* slightly larger icon inside */
+  height: 60px;
+  object-fit: contain;
 }
-.skill1 .skill-count1 {
- right: 0;
+
+body:not(.projects-page) .practice_box h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #252424;
 }
-.skill1 {
-  width: 95%;
+
+/* subtle hover motion for consistency */
+body:not(.projects-page) .practice_box:hover .practice_img-box {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
-.skill2 {
-  width: 90%;
+
+body:not(.projects-page) .practice_container {
+  margin-top: 50px;   /* increased spacing below the heading */
 }
-.skill2 .skill-count2 {
-  right: 0;
+
+/* ---------- refine layout of 'Areas of Interest' section ---------- */
+
+/* Adds breathing room above and below the icon boxes */
+body:not(.projects-page) .practice_container {
+  margin-top: 50px;    /* space above boxes */
+  margin-bottom: 40px; /* space below boxes */
+  justify-content: center;
 }
-.skill3{
-  width: 85%;
+
+/* Centers and slightly spaces the paragraph under the boxes */
+body:not(.projects-page) .practice_detail {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px; /* centers + adds bottom space */
+  color: #555;
+  line-height: 1.6;
 }
-.skill3 .skill-count3 {
-  right: 0;
+
+/* Optional: make the "Read More" button centered as well */
+body:not(.projects-page) .practice_detail .d-flex {
+  justify-content: center !important;
 }
-.skill4{
-  width: 65%;
-}
-.skill4 .skill-count4 {
-  right: 0;
-}
-.skill5{
-  width: 50%;
-}
-.skill5 .skill-count5 {
-  right: 0;
-}
- */
+
 
 
 
